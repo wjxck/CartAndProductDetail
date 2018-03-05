@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/detail_adapter_sdv"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        app:failureImage="@drawable/icon_failure"
+        app:placeholderImage="@drawable/icon_placeholder"
+        app:progressBarImage="@drawable/icon_progress_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="费卡机发电电费卡机发电电费卡机发电" />
+
+            <TextView
+                android:id="@+id/tv_detail_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="￥1321.0"
+                android:textColor="#E2791E"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_detail_sj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="我是商家11" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/fenxiang" />
+    </RelativeLayout>
+</LinearLayout>

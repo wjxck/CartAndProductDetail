@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context="com.example.disanzhouzhoukaomoni.activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/simple_player_view_player"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/xq_rlv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/kefu" />
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shoucnag" />
+
+        <ImageView
+            android:id="@+id/iv_getcart"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/dianjia" />
+
+        <Button
+            android:id="@+id/bt_addcart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FDC302"
+            android:text="添加到购物车"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#FF6A04"
+            android:text="立即购买"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>
